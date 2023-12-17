@@ -1,66 +1,55 @@
-Certainly! Here's a basic template for your README.md file:
+# Телеграм-бот для анализа тональности текстов
 
----
+Телеграм-бот для определения тональности текстов с использованием [Panferov API](https://api.panferov.site/).
 
-# Telegram Sentiment Analysis Bot
+## Обзор
 
-A Telegram bot for sentiment analysis of text messages using the [Panferov API](https://api.panferov.site/).
+Этот телеграм-бот создан на языке Python с использованием библиотеки [aiogram](https://docs.aiogram.dev/) для взаимодействия с API телеграм-ботов. Бот анализирует тональность текстов через API Panferov, предоставляя информацию о обнаруженном языке, функциональной и эмоциональной тональности.
 
-## Overview
-
-This Telegram bot is built with Python using the [aiogram](https://docs.aiogram.dev/) library for interacting with the Telegram Bot API. It analyzes the sentiment of text messages through the Panferov API, providing information about the detected language, functional sentiment, and emotional sentiment.
-
-## Prerequisites
+## Предварительные требования
 
 - Python 3.x
-- Dependencies listed in `requirements.txt`
-- Telegram Bot Token (Get it from [BotFather](https://core.telegram.org/bots#botfather))
-- Panferov API Endpoint (Replace `https://api.panferov.site/v1/sentiment` with your actual endpoint)
+- Зависимости, указанные в `requirements.txt`
+- Токен телеграм-бота (получите его от [BotFather](https://core.telegram.org/bots#botfather))
+- Конечная точка API Panferov (Замените `https://api.panferov.site/v1/sentiment` на вашу реальную конечную точку)
 
-## Setup
+## Настройка
 
-1. Clone the repository:
+1. Клонируйте репозиторий:
 
    ```bash
    git clone https://github.com/your-username/telegram-sentiment-bot.git
    cd telegram-sentiment-bot
    ```
 
-2. Install dependencies:
+2. Установите зависимости:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-3. Replace `YOUR_TELEGRAM_BOT_TOKEN` with your actual Telegram Bot Token in the script.
+3. Замените `YOUR_TELEGRAM_BOT_TOKEN` на ваш реальный токен телеграм-бота в скрипте.
 
-4. Replace `https://api.panferov.site/v1/sentiment` with your actual Panferov API Endpoint in the script.
+4. Замените `https://api.panferov.site/v1/sentiment` на вашу реальную конечную точку API Panferov в скрипте.
 
-## Usage
+## Использование
 
-1. Run the bot script:
+1. Запустите скрипт бота:
 
    ```bash
-   python your_bot_script.py
+   python main.py
    ```
 
-2. Start a chat with your bot on Telegram.
+2. Начните чат с вашим ботом в Телеграм.
 
-3. Send text messages to the bot to analyze their sentiment.
+3. Отправляйте текстовые сообщения боту для анализа их тональности.
 
-## Commands
+## Команды
 
-- `/start`: Start the bot and receive instructions.
-- Send any text message to analyze its sentiment.
+- `/start`: Запустить бота и получить инструкции.
+- Отправьте любое текстовое сообщение для анализа его тональности.
 
-## Contributing
-
-Contributions are welcome! If you find any issues or have improvements to suggest, please open an issue or create a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-Feel free to customize the README to fit your project's specific details and structure.
+Не стесняйтесь настраивать README под свои конкретные детали и структуру проекта.
